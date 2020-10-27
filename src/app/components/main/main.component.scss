@@ -1,0 +1,21 @@
+@import '../../../styles.scss';
+
+.wrapper-section {
+    height: 100%;
+    padding: 20px 0;
+    background: $section-color;
+    align-items: center;
+    justify-content: center;
+}
+
+.block {
+    padding: 0 10px;
+}
+
+@media only screen and (max-width : 370px) { 
+    .wrapper-section {
+        .p-15 {
+            padding: 8px;
+        }
+    }
+}

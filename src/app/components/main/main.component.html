@@ -1,0 +1,39 @@
+<app-header></app-header>
+<ng-container *ngFor='let valute of valutes'>
+  <div class="wrapper-section d-flex">
+
+    <div class="char-code block f-direction">
+      <div class="title p-15">
+        <p class="m-0">Код</p>
+      </div>
+      <div class="value p-15">
+        <p class="m-0">
+          {{valute.Name}}
+        </p>
+      </div>
+    </div>
+
+    <div class="nominal block f-direction">
+      <div class="title p-15">
+        <p class="m-0">Номинал </p>
+      </div>
+      <div class="value p-15">
+        <p class="m-0">
+          {{valute.Nominal}}
+        </p>
+      </div>
+    </div>
+
+    <div class="price block f-direction">
+        <div class="title p-15">
+          <p class="m-0">ЦБ на сегодня</p>
+        </div>
+        <div class="value p-15">
+          <p class="m-0">
+            {{valute.Value}}
+          </p>
+        </div>
+      </div>
+
+  </div>
+</ng-container>
