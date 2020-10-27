@@ -15,7 +15,7 @@ import { ParserJSON } from 'src/app/parser-json';
 })
 export class MainComponent implements OnInit {
 
-
+ 
   url = [
     {
       url: 'https://www.cbr-xml-daily.ru/daily_utf8.xmll',
@@ -44,7 +44,6 @@ export class MainComponent implements OnInit {
   async getMyData() {
     const data = await this.getValute()
     this.valutes = this.normalize(data.list, data.type);
-    console.log(this.valutes)
   }
 
   async getValute() {
